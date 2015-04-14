@@ -1,0 +1,111 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: "Helvetica Neue";
+	font-weight: 100;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.left {
+	margin-right: auto;
+	margin-left: auto;
+	position: fixed;
+	float: left;
+	height: calc(100% + 20px);
+	width: 23%;
+	top: -20px;
+	overflow: auto;
+	background-color: #F3F3F3;
+	-webkit-box-shadow: 0px 0px 45px -1px rgba(158,158,158,1);
+	-moz-box-shadow: 0px 0px 45px -1px rgba(158,158,158,1);
+	box-shadow: 0px 0px 45px -1px rgba(158,158,158,1);
+}
+
+.name {
+	display: inline-block;
+	font-size: 40px;
+	margin-top: 40px;
+}
+
+.it {
+	font-style: italic;
+	text-align: center;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.in {
+	text-align: right;
+	position: relative;
+	right: 25px;
+}
+.yo {
+	border: 1px solid gray;
+	border-radius: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 50%;
+}
+
+input {
+	border-style: none;
+	background-color: #FFF;
+	position: relative;
+	bottom: 21px;
+	left: 25px;
+}
+
+input:focus {
+	outline: none;
+}
+
+.ye {
+	width: 200px;
+	height: 25px;
+	background-color: #FFF;
+	border-radius: 30px;
+	position: relative;
+	left: 49px;
+	top: 10px;
+}
+
+.navbar-search {
+	position: fixed;
+	top: 3px;
+}
+
+.welcome {
+	font-size: 18px;
+}
+
+.sidePhrase p {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.sidePhrase {
+	position: relative;
+	top: 50px;
+}
+
+button {
+	color: #FFF !important;
+	background-color: #888;
+	position: relative;
+	top: 100px;
+	left: 30px;
+	transition: 0.3s ease-in-out;
+}
+
+button:hover {
+	color: #888 !important;
+	background-color: #FFF;
+	transition: 0.3s ease-in-out;
+}
+
+button:focus {
+	outline: none !important;
+}
