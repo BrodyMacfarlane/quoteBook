@@ -28,18 +28,6 @@ html, body {
 	margin-top: 40px;
 }
 
-.it {
-	font-style: italic;
-	text-align: center;
-	margin-right: 15px;
-	margin-left: 15px;
-}
-
-.in {
-	text-align: right;
-	position: relative;
-	right: 25px;
-}
 .yo {
 	border: 1px solid gray;
 	border-radius: 30px;
@@ -50,7 +38,21 @@ html, body {
 	width: 50%;
 }
 
-input {
+.it {
+	font-style: italic;
+	vertical-align: middle !important;
+	text-align: center;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.in {
+	text-align: right;
+	position: relative;
+	right: 25px;
+}
+
+.search {
 	border-style: none;
 	background-color: #FFF;
 	position: relative;
@@ -58,7 +60,7 @@ input {
 	left: 25px;
 }
 
-input:focus {
+.search:focus {
 	outline: none;
 }
 
@@ -92,20 +94,91 @@ input:focus {
 }
 
 button {
-	color: #FFF !important;
-	background-color: #888;
-	position: relative;
-	top: 100px;
-	left: 30px;
+	color: #888 !important;
+	background-color: #FFF !important;
 	transition: 0.3s ease-in-out;
 }
 
+.btnParent, ul.dropdown-menu {
+	position: absolute;
+	top: 100px;
+	left: 40px;
+}
+
+ul.dropdown-menu {
+	position: relative;
+	top: 135px;
+}
+
+.btnChild {
+	position: relative;
+	left: 30px;
+}
+
+.btnParent2, ul.ddm2 {
+	position: absolute;
+	top: 100px;
+	left: 155px;
+}
+
+ul.ddm2 {
+	position: relative;
+	top: 135px;
+}
+
+.btnChild2 {
+	position: relative;
+	left: 18px;
+}
+
 button:hover {
-	color: #888 !important;
-	background-color: #FFF;
+	color: #FFF !important;
+	background-color: #888 !important;
 	transition: 0.3s ease-in-out;
 }
 
 button:focus {
 	outline: none !important;
+}
+
+.rounded {
+	border-style: none;
+	border-radius: 10px;
+}
+
+.rounded:focus {
+	outline: none;
+}
+
+.dropdown-menu li input {
+	position: relative;
+	left: 12px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-style: none;
+}
+
+.dropdown-menu li input:focus {
+	outline: none;
+}
+
+.container {
+	position: fixed;
+	bottom: 0px;
+	left: 20px;
+}
+
+.socMed img {
+	width: 30px;
+	height: 24px;
+	display: inline-block;
+}
+
+.socMed p {
+	display: inline-block;
+}
+
+.username {
+	font-size: 15px;
+	font-variant: small-caps;
 }

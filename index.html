@@ -4,6 +4,10 @@
 <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 <title>Dope Quotes</title>
 <body ng-controller = "mainCtrl">
+
+
+
+
 	<div class = "left">
 		<ul>
 			<li class="name">Dope Quotes</li>
@@ -11,22 +15,60 @@
 		<div class="ye">
 			<form ng-class="{focus:focus}" class="navbar-search col-md-3 docs-search ng-pristine ng-valid" ng-submit="submit()" style="">
               <span class="glyphicon glyphicon-search search-icon"></span>
-              <input type="text" name="as_q" class="search-query ng-pristine ng-valid ng-touched" placeholder="Search" ng-focus="focus=true" ng-blur="focus=false" ng-change="search(q)" ng-model="q" docs-search-input="" autocomplete="off" style="">
+              <input class="search" type="text" name="as_q" class="search-query ng-pristine ng-valid ng-touched" placeholder="Search" ng-focus="focus=true" ng-blur="focus=false" ng-change="search(q)" ng-model="q" docs-search-input="" autocomplete="off" style="">
             </form>
         </div>
         <div class="sidePhrase">
         	<p class="welcome">Welcome to Dope Quotes.</p>
         	<p>Feel free to look around, and add or remove anything you want.  Peace, yo.</p>
         </div>
-        <button ng-click="" class="btn btn-large">Add Quote</button>
-        <button ng-click="" class="btn btn-large">Remove Quote</button>
+
+
+ <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle btnParent" type="button" id="menu1" data-toggle="dropdown">Add Quote
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><input name = "Quote" placeholder = "Quote. . ."></input></li>
+          <li role="presentation"><input name = "Author" placeholder = "Author. . ."></input></li>
+          <li role="presentation"><button name = "Save" class="btn btn-default btnChild">Add Quote</button></li>
+        </ul>
+    </div>
+
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle btnParent2" type="button" id="menu1" data-toggle="dropdown">Remove Quote
+    	<span class="caret"></span></button>
+   	<ul class="dropdown-menu ddm2" role="menu" aria-labelledby="menu1">
+        <li role="presentation"><input name = "Quote" placeholder = "Quote to remove. . ."></input></li>
+        <li role="presentation"><button name = "Remove" class="btn btn-default btnChild2">Remove Quote</button></li>
+    </ul>
+</div>
+
+<div class="container">
+	<div class="socMed">
+		<img src="https://g.twimg.com/Twitter_logo_blue.png">
+		<p>Follow us on Twitter! <span class="username">@dopequotes</span></p>
 	</div>
+</div>
+
+</div>
+
+
+</div>
+
 	<div ng-repeat="quote in quotes" class="yo">
-		<p class="it">{{quote.text}}</p><br /><p class="in">by {{quote.author}}</p>
+		<p class="it">'{{quote.text}}'</p><br /><p class="in">by {{quote.author}}</p>
 	</div>
+
+
+
+
+
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/mainCtrl.js"></script>
 <script type="text/javascript" src="js/dataService.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
 </body>
 </html>
